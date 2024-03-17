@@ -1,0 +1,19 @@
+@import './header.scss';
+
+@media (max-width: $xlg) {
+  .nav-list_item {
+    font-size: 12px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+} 
+@media (max-width: $lg) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 32px 0;
+  }
+  .header nav {
+    grid-column: 2/4;
+  }
+} 

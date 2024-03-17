@@ -1,0 +1,33 @@
+.header {
+  max-width: $maxWidth;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 36px 0;
+  align-items: center;
+}
+
+
+
+.logo {
+  font-size: 20px;
+  letter-spacing: -0.06rem;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.nav-list_item {
+  font-size: 15px;
+  align-self: center;
+  cursor: pointer;
+  transition: all .5s ease-in;
+}
+
+.nav-list_item:hover {
+  opacity: .3;
+}
