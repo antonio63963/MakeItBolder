@@ -1,19 +1,10 @@
 @import "./sass/variablses.scss";
+@import "./sass/fonts.scss";
 @import "./sass/header.scss";
 @import "./sass/headline.scss";
 @import "./sass/scrollbar.scss";
 
 @import "./sass/mediaqueries.scss";
-
-@font-face {
-  font-family: "JeanLuc";
-  src: url("./assets/fonts/JeanLuc-Thin.ttf");
-}
-@font-face {
-  font-family: "Helv";
-  src: url("./assets/fonts/HelveticaLight.ttf");
-}
-
 
 html {
   font-size: calc(1vw / 14.4 * 9);
@@ -77,11 +68,8 @@ body {
 .app-width {
   width: 100%;
   max-width: 1440px;
-  // padding-left: 3rem;
-  // padding-right: 3rem;
 }
 
 ul > li {
-  // line-height: 20.7px;
   list-style-type: none;
 }

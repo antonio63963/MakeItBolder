@@ -19,9 +19,7 @@
   .header nav {
     grid-column: 2/4;
   }
-  // .headline-image {
-  //   width: 17rem;
-  // }
+
 } 
 @media (min-width: $xlg) {
  h1, .headline-text-title {
@@ -35,4 +33,7 @@
     font-size: 220px;
     letter-spacing: -12px;
   }
+ .headline-text-subtitle {
+  font-size: 40px;
+ }
 } 
