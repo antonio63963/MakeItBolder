@@ -9,11 +9,30 @@
   }
 } 
 @media (max-width: $lg) {
+  .header-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   .header {
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 32px 0;
   }
   .header nav {
     grid-column: 2/4;
+  }
+  // .headline-image {
+  //   width: 17rem;
+  // }
+} 
+@media (min-width: $xlg) {
+ h1, .headline-text-title {
+    font-size: 185px;
+    letter-spacing: -12px;
+  }
+} 
+@media (min-width: $xxlg) {
+  
+ h1, .headline-text-title {
+    font-size: 220px;
+    letter-spacing: -12px;
   }
 } 
