@@ -1,0 +1,20 @@
+@include desctop {
+  .nav-list_item {
+    font-size: 12px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+}
+@include tablet {
+  .header-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .header nav {
+    grid-column: 2/4;
+  }
+}

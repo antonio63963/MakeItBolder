@@ -28,7 +28,7 @@
 //image
 .headline-image-wrapper {
   position: relative;
-  width: 170px;
+  width: 17rem;
 }
 
 .headline-image {
@@ -37,6 +37,7 @@
   right: -1rem;
   bottom: -3em;
   width: 50em;
+  max-width: 890px;
   border-radius: 10px;
 }
 
@@ -48,6 +49,7 @@
   margin-top: 2.4rem;
   font-size: 4rem;
   text-align: center;
+  width: 760px;
   max-width: 76rem;
   color: $color-green;
   align-self: center;
