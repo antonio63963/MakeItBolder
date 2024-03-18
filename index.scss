@@ -6,22 +6,15 @@
 @import "./sass/mediaqueries.scss";
 
 @font-face {
-  font-family: JeanLuc;
-  src: url(./assets/fonts/JeanLuc-Bold.ttf) format("ttf");
-  font-weight: 500;
-  font-display: swap;
+  font-family: "JeanLuc";
+  src: url("./assets/fonts/JeanLuc-Thin.ttf");
 }
 @font-face {
-  font-family: JeanLucThin;
-  src: url(./assets/fonts/JeanLuc-Thin.ttf) format("ttf");
-  font-weight: 300;
-  font-display: swap;
+  font-family: "Helv";
+  src: url("./assets/fonts/HelveticaLight.ttf");
 }
-@font-face {
-  font-family: "HelveticaThin";
-  src: url(./assets/fonts/HelveticaThin.ttf) format("ttf");
-  font-weight: 300;
-}
+
+
 html {
   font-size: calc(1vw / 14.4 * 9);
 }
@@ -54,7 +47,7 @@ h3 {
 }
 
 body {
-  font-family: "HelveticaThin";
+  font-family: Helv;
   font-size: 1.7rem;
   height: 100vh;
   width: 100vw;
@@ -78,13 +71,14 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   justify-self: center;
+  width: 100vw;
 }
 
 .app-width {
   width: 100%;
   max-width: 1440px;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  // padding-left: 3rem;
+  // padding-right: 3rem;
 }
 
 ul > li {

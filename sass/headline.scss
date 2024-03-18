@@ -1,44 +1,55 @@
-// @import './fonts.scss';
-
 .headline {
+  max-width: 1440px;
   margin-top: 100px;
   background-color: #504f4f;
   max-width: 100%;
-  // height: 699px;
   height: 69rem;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.headline-container {
+  overflow: hidden;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 8rem;
 }
 
 .headline-text {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  grid-column: 2/12;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+}
+//image
+.headline-image-wrapper {
+  position: relative;
+  width: 170px;
 }
 
-.headline-image{
+.headline-image {
   position: absolute;
-  border-radius: 0 10px 10px 0;
-  height: 60rem;
-  width: 170px;
-  left: -30px;
-  bottom: -50px;
-  background-image: url(../assets/img/headline_img.png);
-  background-position: 50% 20%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  z-index: 10;
+  right: -1rem;
+  bottom: -3em;
+  width: 50em;
+  border-radius: 10px;
+}
+
+.headline-gif {
+  max-width: 100%;
 }
 
 .headline-text-subtitle {
-  font-family: HelveticaThin;
+  margin-top: 2.4rem;
   font-size: 4rem;
-  // font-size: 40px;
-
   text-align: center;
-  letter-spacing: -0.2rem;
   max-width: 96rem;
-  color: $color-green
+  color: $color-green;
+  align-self: center;
+  justify-content: center;
 }
