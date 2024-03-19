@@ -1,18 +1,336 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import './headline.scss';
- *   |         ^^^^^^^^^^^^^^^^^
- *   '
- *   sass\components\headline\index.scss 1:9  @import
- *   index.scss 6:9                           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import './headline.scss';\d\a   \2502          ^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\components\\headline\\index.scss 1:9  @import\a   index.scss 6:9                           root stylesheet";
+@font-face {
+  font-family: "JeanLuc";
+  src: url("./assets/fonts/JeanLuc-Thin.ttf");
 }
+@font-face {
+  font-family: "Helv";
+  src: url("./assets/fonts/HelveticaLight.ttf");
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0e0e0e;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px; /* roundness of the scroll thumb */
+  background: #bdff32;
+  width: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c0bde0;
+}
+
+.header-container {
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: flex;
+  justify-content: center;
+  background-color: #0e0e0e;
+}
+
+.header {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  letter-spacing: -0.06rem;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.nav-list_item {
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list_item:hover {
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-list_item {
+    font-size: 12px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .header nav {
+    grid-column: 2/4;
+  }
+}
+.headline {
+  max-width: 1440px;
+  margin-top: 100px;
+  background-color: #504f4f;
+  max-width: 100%;
+  height: 69rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.headline-container {
+  overflow: hidden;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 8rem;
+}
+
+.headline-text {
+  position: relative;
+  grid-column: 2/12;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+}
+
+.headline-image-wrapper {
+  position: relative;
+  width: 17rem;
+}
+
+.headline-image {
+  position: absolute;
+  z-index: 10;
+  right: -1rem;
+  bottom: -3em;
+  width: 50em;
+  max-width: 890px;
+  border-radius: 10px;
+}
+
+.headline-gif {
+  max-width: 100%;
+}
+
+.headline-text-subtitle {
+  margin-top: 2.4rem;
+  font-size: 4rem;
+  text-align: center;
+  width: 760px;
+  max-width: 76rem;
+  color: #bdff32;
+  align-self: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1400px) {
+  .headline-text-subtitle {
+    font-size: 40px;
+    margin-top: 24px;
+  }
+  .headline-image-wrapper {
+    width: 170px;
+  }
+  .headline-image {
+    right: -10px;
+    bottom: -30px;
+  }
+  .headline-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+  }
+  .headline {
+    height: 690px;
+  }
+}
+.team-section {
+  margin-top: 38rem;
+  padding: 0 3rem;
+}
+
+.team-section__title {
+  font-family: Helv;
+  font-size: 11rem;
+  letter-spacing: -0.4rem;
+  line-height: 11rem;
+  text-transform: uppercase;
+}
+
+.team-section__subtitle {
+  white-space: nowrap;
+  font-family: JeanLuc;
+  font-size: 12rem;
+  letter-spacing: -0.07rem;
+  line-height: 9rem;
+}
+
+.team-section__content {
+  margin-top: 2.3rem;
+  max-height: 75rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 2.3rem;
+}
+
+.team-section__description {
+  grid-row: 2;
+  font-size: 2.4rem;
+  color: #bdff32;
+  text-transform: lowercase;
+}
+
+.team-section__img_big {
+  grid-row: 3/9;
+  grid-column: 1;
+  background-image: url("../../../assets/img/headline_img.png");
+  background-size: cover;
+}
+
+.team-section__img_small-1 {
+  grid-column: 2;
+  grid-row: 1/5;
+  background-image: url("../../../assets/img/team-section/team_img_1.png");
+  background-size: cover;
+}
+
+.team-section__img_small-2 {
+  overflow: hidden;
+  grid-column: 2;
+  grid-row: 5/9;
+  background-image: url("../../../assets/img/team-section/team_img_2.png");
+  background-size: cover;
+}
+
+.rounded-item {
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+  .team-section {
+    margin-top: 380px;
+    padding: 0 30px;
+  }
+  .team-section__content {
+    margin-top: 24px;
+    max-height: 750px;
+    gap: 24px;
+  }
+  .team-section__title {
+    font-size: 100px;
+    letter-spacing: -4px;
+    line-height: 110px;
+  }
+  .team-section__subtitle {
+    font-size: 120px;
+    letter-spacing: -4.8px;
+    line-height: 90px;
+  }
+  .team-section__description {
+    font-size: 24px;
+  }
+}
+html {
+  font-size: 0.625vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: JeanLuc;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 19rem;
+  letter-spacing: -0.8rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+body {
+  font-family: Helv;
+  font-size: 1.7rem;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #0e0e0e;
+  justify-content: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.scroll-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  justify-self: center;
+  width: 100vw;
+}
+
+.app-width {
+  width: 100%;
+  max-width: 1440px;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 1400px) {
+  h1 {
+    font-size: 220px;
+    letter-spacing: -12px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

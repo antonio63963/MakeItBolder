@@ -1,0 +1,56 @@
+.team-section {
+  margin-top: 38rem;
+  padding: 0 3rem;
+}
+.team-section__title {
+  font-family: Helv;
+  font-size: 11rem;
+  letter-spacing: -0.4rem;
+  line-height: 11rem;
+  text-transform: uppercase;
+}
+.team-section__subtitle {
+  white-space: nowrap;
+  font-family: JeanLuc;
+  font-size: 12rem;
+  letter-spacing: -0.07rem;
+  line-height: 9rem;
+}
+.team-section__content {
+  margin-top: 2.3rem;
+  max-height: 75rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 2.3rem;
+}
+.team-section__description {
+  grid-row: 2;
+  font-size: 2.4rem;
+  color: $color-green;
+  text-transform: lowercase;
+}
+.team-section__img_big {
+  grid-row: 3/9;
+  grid-column: 1;
+  background-image: url("../../../assets/img/headline_img.png");
+  background-size: cover;
+}
+.team-section__img_small-1 {
+  grid-column: 2;
+  grid-row: 1/5;
+  background-image: url("../../../assets/img/team-section/team_img_1.png");
+  background-size: cover;
+}
+.team-section__img_small-2 {
+  overflow: hidden;
+  grid-column: 2;
+  grid-row: 5/9;
+  background-image: url("../../../assets/img/team-section/team_img_2.png");
+  background-size: cover;
+}
+
+//utils
+.rounded-item {
+  border-radius: 10px;
+}
