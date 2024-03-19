@@ -1,0 +1,60 @@
+.lets-section {
+  margin-top: 38rem;
+  padding: 0 3rem;
+}
+.lets-section__title {
+  font-family: Helv;
+  font-size: 19.8rem;
+  letter-spacing: -0.04rem;
+  text-transform: uppercase;
+  line-height: 16rem;
+}
+.lets-section__subtitle {
+  font-family: JeanLuc;
+  font-size: 20.2rem;
+  letter-spacing: -0.4rem;
+  line-height: 16rem;
+}
+.lets-section__mix-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2.4rem;
+}
+.lets-section__subtitle-mix {
+  font-weight: bold;
+}
+.lets-section__description {
+  margin-top: 10px;
+  font-size: 4.4rem;
+  color: $color-green;
+}
+.lets-section__button {
+  margin-top: 3rem;
+}
+
+@include desctopXLMin {
+  .lets-section {
+    margin-top: 380px;
+    padding: 0 30px;
+  }
+  .lets-section__title {
+    font-size: 198px;
+    letter-spacing: -4px;
+    line-height: 160px;
+  }
+  .lets-section__subtitle {
+    font-size: 220px;
+    letter-spacing: -4px;
+    line-height: 170px;
+  }
+  .lets-section__mix-row {
+    gap: 24px;
+  }
+  .lets-section__description {
+    font-size: 44px;
+    line-height: 38px;
+  }
+  .lets-section__button {
+    margin-top: 30px;
+  }
+}

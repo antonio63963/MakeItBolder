@@ -35,12 +35,14 @@
   grid-column: 1;
   background-image: url("../../../assets/img/headline_img.png");
   background-size: cover;
+  border-radius: $radius;
 }
 .team-section__img_small-1 {
   grid-column: 2;
   grid-row: 1/5;
   background-image: url("../../../assets/img/team-section/team_img_1.png");
   background-size: cover;
+  border-radius: $radius;
 }
 .team-section__img_small-2 {
   overflow: hidden;
@@ -48,9 +50,5 @@
   grid-row: 5/9;
   background-image: url("../../../assets/img/team-section/team_img_2.png");
   background-size: cover;
-}
-
-//utils
-.rounded-item {
-  border-radius: 10px;
+  border-radius: $radius;
 }
