@@ -57,14 +57,13 @@ body {
   justify-content: center;
 }
 
-.container {
+.content-container {
   position: relative;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  justify-self: center;
   width: 100vw;
+  // min-height: 100%;
+  display: grid;
+  // justify-self: center;
+  
 }
 
 .app-width {
@@ -83,7 +82,7 @@ ul > li {
   width: 100%;
   font-family: JeanLuc;
   font-size: 4.2rem;
-  letter-spacing: -.05;
+  letter-spacing: -0.05;
   padding: 6rem;
   border-radius: $radius;
   cursor: pointer;
