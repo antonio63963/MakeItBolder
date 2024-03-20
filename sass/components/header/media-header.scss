@@ -17,4 +17,22 @@
   .header nav {
     grid-column: 2/4;
   }
+  .nav-list {
+    font-size: 1.8rem;
+  }
+}
+@include mobile {
+  .nav-list {
+    display: none;
+  }
+  .menu-button {
+    display: inline-block;
+    // width: 32px;
+  }
+}
+@include mobileXS {
+  .sidebar {
+    width: 100%;
+  }
+ 
 }
