@@ -455,7 +455,7 @@ nav {
     gap: 24px;
   }
   .lets-section__description {
-    font-size: 44px;
+    font-size: 42px;
     line-height: 38px;
   }
   .lets-section__button {
@@ -572,6 +572,38 @@ nav {
     text-align: center;
   }
 }
+@media screen and (min-width: 1400px) {
+  .worry-section__title {
+    font-size: 180px;
+    line-height: 180px;
+    letter-spacing: -9px;
+  }
+  .worry-section__content {
+    gap: 24px;
+  }
+  .worry-section__content .worry-section__img1 {
+    height: 440px;
+  }
+  .worry-section__content .worry-section__img2 {
+    height: 596px;
+  }
+  .worry-section__subtitle {
+    font-size: 170px;
+    line-height: 140px;
+    letter-spacing: -8px;
+  }
+  .worry-section__mix-row {
+    gap: 24px;
+  }
+  .worry-section__mix-row .worry-section__description {
+    font-size: 48px;
+    line-height: 40px;
+  }
+  .worry-section__mix-row .worry-section__email-input {
+    margin-top: 135px;
+    margin-bottom: 12px;
+  }
+}
 html {
   font-size: 0.625vw;
 }
@@ -588,7 +620,6 @@ body {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 1fr;
   background-color: #0e0e0e;
   justify-content: center;
   color: #fff;
@@ -619,12 +650,6 @@ h3 {
 
 input:focus {
   outline: none;
-}
-
-.scroll-container {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
 }
 
 .content-container {
@@ -669,7 +694,7 @@ ul > li {
   border-style: solid;
   border-width: 0 0 1px 0;
   border-color: #fff;
-  font-size: 2rem;
+  font-size: 16px;
 }
 
 .input:focus {
