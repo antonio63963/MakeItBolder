@@ -22,6 +22,10 @@
   }
 }
 @include mobile {
+  .header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   .nav-list {
     display: none;
   }
@@ -31,6 +35,10 @@
   }
 }
 @include mobileXS {
+  .header-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .sidebar {
     width: 100%;
   }

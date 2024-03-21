@@ -58,6 +58,7 @@
 .logo {
   font-size: 20px;
   letter-spacing: -0.06rem;
+  align-self: center;
 }
 
 .icon-hide {
@@ -167,6 +168,10 @@ nav {
   }
 }
 @media screen and (max-width: 768px) {
+  .header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   .nav-list {
     display: none;
   }
@@ -175,6 +180,10 @@ nav {
   }
 }
 @media screen and (max-width: 576px) {
+  .header-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .sidebar {
     width: 100%;
   }
