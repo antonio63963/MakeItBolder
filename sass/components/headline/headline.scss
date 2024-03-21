@@ -26,6 +26,12 @@
   justify-items: center;
   align-content: center;
 }
+.headline-text__title {
+  font-size: 22rem;
+  line-height: 20rem;
+  justify-self: start;
+  white-space: nowrap;
+}
 //image
 .headline-image-wrapper {
   position: relative;
@@ -35,7 +41,7 @@
 .headline-image {
   position: absolute;
   z-index: 10;
-  right: -1rem;
+  right: -2rem;
   bottom: -3em;
   width: 50em;
   max-width: 890px;
