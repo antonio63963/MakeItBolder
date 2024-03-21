@@ -1,0 +1,13 @@
+@include mobile {
+  .lets-section__description {
+    margin-top: 5px;
+  }
+}
+@include mobileXS {
+  .lets-section__description {
+    margin-top: 2px;
+  }
+  .lets-section__button {
+    margin-top: 16px;
+  }
+}
