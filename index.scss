@@ -59,11 +59,9 @@ body {
 
 .content-container {
   position: relative;
-  width: 100vw;
-  // min-height: 100%;
   display: grid;
-  // justify-self: center;
-  
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
 }
 
 .app-width {
