@@ -1,0 +1,22 @@
+@include mobileXS {
+  .worry-section__content {
+    grid-template-columns: 1fr;
+    .worry-section__img1 {
+      height: 100rem;
+    }
+  }
+  .show-on-mobile {
+    display: inline;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .worry-section__mix-row {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .worry-section__description {
+    width: 80%;
+    text-align: center;
+  }
+}

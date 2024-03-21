@@ -542,6 +542,36 @@ nav {
   margin-bottom: 2.4rem;
 }
 
+.show-on-mobile {
+  display: none;
+}
+
+.hide-on-mobile {
+  display: inline;
+}
+
+@media screen and (max-width: 576px) {
+  .worry-section__content {
+    grid-template-columns: 1fr;
+  }
+  .worry-section__content .worry-section__img1 {
+    height: 100rem;
+  }
+  .show-on-mobile {
+    display: inline;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .worry-section__mix-row {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .worry-section__description {
+    width: 80%;
+    text-align: center;
+  }
+}
 html {
   font-size: 0.625vw;
 }

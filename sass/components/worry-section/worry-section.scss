@@ -40,7 +40,6 @@
 
 .worry-section__mix-row {
   display: grid;
-  // grid-template-columns: 1fr 1.1fr;
   grid-auto-rows: auto;
   gap: 2.3rem;
 
@@ -64,3 +63,9 @@
   margin-bottom: 2.4rem;
 }
 
+.show-on-mobile {
+  display: none;
+}
+.hide-on-mobile {
+  display: inline;
+}
