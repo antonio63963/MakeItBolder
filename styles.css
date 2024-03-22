@@ -32,7 +32,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #FCBC3A;
+  background: #fcbc3a;
 }
 
 .header-container {
@@ -83,10 +83,10 @@
   cursor: pointer;
 }
 .menu-button__burger:hover {
-  fill: #FCBC3A;
+  fill: #fcbc3a;
 }
 .menu-button__close:hover {
-  stroke: #FCBC3A;
+  stroke: #fcbc3a;
 }
 
 nav {
@@ -111,7 +111,7 @@ nav {
 }
 
 .nav-list_item:hover {
-  color: #FCBC3A;
+  color: #fcbc3a;
 }
 
 .sidebar {
@@ -638,7 +638,8 @@ nav {
   letter-spacing: -0.4rem;
 }
 
-.footer__menu-item, .footer__socials-item {
+.footer__menu-item,
+.footer__socials-item {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 10px;
@@ -646,8 +647,9 @@ nav {
   cursor: pointer;
 }
 
-.footer__menu-item:hover, .footer__socials-item:hover {
-  color: #FCBC3A;
+.footer__menu-item:hover,
+.footer__socials-item:hover {
+  color: #fcbc3a;
 }
 
 @media screen and (max-width: 992px) {
@@ -741,7 +743,7 @@ ul > li {
 }
 
 .app-button:hover {
-  background-color: #FCBC3A;
+  background-color: #fcbc3a;
 }
 
 .input {
@@ -757,8 +759,8 @@ ul > li {
 }
 
 .input:focus {
-  border-color: #FCBC3A;
-  caret-color: #FCBC3A;
+  border-color: #fcbc3a;
+  caret-color: #fcbc3a;
   caret-shape: bar;
 }
 

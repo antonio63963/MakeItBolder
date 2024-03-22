@@ -64,7 +64,7 @@ nav {
   font-size: 15px;
   line-height: 10px;
   cursor: pointer;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   display: flex;
   justify-content: flex-end;
 }
@@ -77,7 +77,7 @@ nav {
   position: fixed;
   right: 0;
   z-index: 50;
-  opacity: .9;
+  opacity: 0.9;
   width: 50%;
   height: 100vh;
   padding: 120px 24px;
@@ -85,7 +85,7 @@ nav {
   justify-content: center;
   background-color: $color-bg;
   transform: translate(100%);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .sidebar__nav-list {
   height: 200px;
@@ -93,7 +93,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
 }
-.sidebar__nav-list>.nav-list_item {
+.sidebar__nav-list > .nav-list_item {
   align-self: start;
 }
 
