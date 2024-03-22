@@ -635,7 +635,7 @@ nav {
   grid-row: 2;
   grid-column: 1/7;
   font-size: 26rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.4rem;
 }
 
 .footer__menu-item, .footer__socials-item {
@@ -653,6 +653,12 @@ nav {
 @media screen and (max-width: 992px) {
   .footer-menu__item {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .footer__title {
+    font-size: 257px;
+    letter-spacing: -12px;
   }
 }
 html {
